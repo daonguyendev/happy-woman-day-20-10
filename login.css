@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('z4069914812405_73bff3601d7670f6ddc9733fc1333eab.jpg'); /* Thay đổi đường dẫn hình ảnh */
+    background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ màn hình */
+    background-position: center; /* Hình ảnh căn giữa */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+}
+
+.container {
+    text-align: center;
+    /* Nền trắng mờ cho nội dung bên trong */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.restricted-area {
+    position: relative;
+    width: 400px; /* Kích thước của vùng chứa */
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 50px; /* Khoảng cách giữa câu hỏi và các nút */
+    background-color: rgba(255, 255, 255, 0.5); /* Nền mờ cho khu vực các nút */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#yesBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#yesBtn:hover {
+    background-color: #45a049;
+}
+
+#noBtn {
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+    top: 50px; /* Vị trí ban đầu trong vùng chứa */
+    left: 100px;
+    transition: top 0.1s ease, left 0.1s ease; /* Hiệu ứng mượt khi di chuyển */
+}
+
+#noBtn:hover {
+    background-color: #e53935;
+}
