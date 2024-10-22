@@ -53,7 +53,7 @@ onload = () => {
   
   // Khi nhấn nút "Có", chuyển hướng sang trang index.html
   yesBtn.addEventListener("click", function() {
-      window.location.href = "index.html";
+      window.location.href = "Women.html";
   });
   
   
